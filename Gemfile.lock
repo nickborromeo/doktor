@@ -1,9 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    minitest (5.9.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     rake (10.5.0)
     sinatra (1.4.7)
       rack (~> 1.5)
@@ -15,6 +18,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  minitest
+  rack-test
   rake (~> 10.5.0)
   sinatra (~> 1.4.4)
 
