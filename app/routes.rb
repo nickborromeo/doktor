@@ -1,6 +1,6 @@
 module Doktor
   module Routes
     autoload :Core, './app/routes/core'
-    autoload :PrinterAPI, './app/routes/printer_api'
+    autoload :Printer, './app/routes/printer'
   end
 end

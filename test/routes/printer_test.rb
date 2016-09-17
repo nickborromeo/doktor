@@ -1,6 +1,6 @@
 require_relative './routes_helper'
 
-class AppRoutesPrinterAPITest < Minitest::Test
+class AppRoutesPrinterTest < Minitest::Test
   include Rack::Test::Methods
 
   def app

@@ -1,6 +1,6 @@
 module Doktor
   module Routes
-    class PrinterAPI < Core
+    class Printer < Core
       FULFILLERS = [:marco, :rpi_minted, :globalsoft, :timberline, :taylor_api,
       :taylor_art_api, :cgx_api, :whcc_api, :taylor_taymark, :minted_facility,
       :minted_facility_home_decor, :endicia, :taylor_labelworks, :cgx_sample,
