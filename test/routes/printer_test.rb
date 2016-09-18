@@ -8,8 +8,10 @@ class AppRoutesPrinterTest < Minitest::Test
   end
 
   def test_response_code_for_valid_fulfiller
-    get '/printer/cgx_api/check/response'
-    assert_equal 200, last_response.status
+    Papi.stub(:get, [200, '']) do
+      get '/printer/cgx_api/check/response'
+      assert_equal 200, last_response.status
+    end
   end
 
   def test_response_code_for_invalid_fulfiller
